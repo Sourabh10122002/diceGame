@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://img.freepik.com/free-vector/futuristic-background-design_23-2148503793.jpg);
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10rem;
+}
+
+.head-avatar {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.head-avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.point-input {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+}
+
+.gamebody {
+  width: 100%;
+  height: 85%;
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pointBox {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 5px 5px 10px grey;
+  transform: 0.6s;
+}
+
+.pointBox:hover {
+  box-shadow: 10px 10px 13px black;
+}
+
+.playbtn {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.radiobtn {
+  width: 100%;
+  /* background-color: black; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.optionselete {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* background-color: purple; */
+}
+
+.selectInput {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: yellow;
+}
+
+.selectInput option {
+  background-color: orange;
+}
+
+label {
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+}
+
+.losswon {
+  font-size: 1rem;
+  width: max-content;
+  padding: 0.3rem;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  25% {
+    transform: rotateX(180deg) rotateY(0);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    transform: rotateX(0) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 0px 1rem;
+  }
+  .point-input {
+    font-size: 1rem;
+  }
+}
+
+.popup {
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 10px 10px 30px black;
+}
+
+.popup-video {
+  width: 100%;
+}
+
+.caputepic {
+  width: 100%;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+}
